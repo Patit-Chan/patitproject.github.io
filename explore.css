@@ -1,0 +1,181 @@
+*,*:after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.animation{
+    justify-content: top;
+    text-align: top;
+    align-items: top;
+    top: 1%;
+    left: center;
+    position: absolute;
+}
+
+.loader{
+    position: relative;
+}
+.loader::before{
+    content: '';
+    position: absolute;
+    animation: blinkCursor 0.8s steps(3) infinite;
+}
+@keyframes blinkCursor{
+    0%,75%{
+        opacity: 1;
+    }
+    76%,100%{
+        opacity: 0;
+    }
+}
+.loader h2{
+    position: relative;
+    color: #68c3bf;
+    text-transform: uppercase;
+    animation: typing 8s steps(70) infinite;
+    overflow: hidden;
+    font-weight: 400;
+}
+@keyframes typing{
+    0%,90%,100%{
+        width: 0;
+    }
+    30%,60%{
+        width: 344.23px;
+    }
+}
+
+
+
+
+
+
+body{
+
+    font-size: 16px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+    min-height: 100vh;
+}
+img{
+    max-width: 100%;
+    display: block;
+    cursor: pointer;
+}
+.ui-card{
+    width: 300px;
+    background: radial-gradient(#111 50% #000 100%);
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+}
+.ui-card img{
+    transform: scale(1.3);
+    transition: all 0.3s ease-out;
+}
+.ui-card:hover img{
+    transform: scale(1.1) translateY(-20px);
+    opacity: 0.3;
+}
+.description{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+h3.travel{
+    color: #68c3bf;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    left: 9%;
+    bottom: 9%;
+}
+h3.food{
+    color: #68c3bf;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    left: 45%;
+    bottom: 9%;
+}
+h3.puja{
+    color: #68c3bf;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    left: 78%;
+    bottom: 9%;
+}
+.description p{
+    font-weight: 400;
+    color: #68c3bf;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3 ease-out 0.2s;
+}
+.description a{
+    color: #fff;
+    background: #9d0000;
+    font-weight: 400;
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 100px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3 ease-out 0.4s;
+}
+.description a:hover {
+    background: #000000;
+
+}
+.ui-card:hover .description h3{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.ui-card:hover .description p{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.ui-card:hover .description a{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+
+ion-icon{
+    width: 3em;
+}
+a{
+    color: #68c3bf;
+    text-decoration: none;;
+    display: inline-block;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+

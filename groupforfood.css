@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(foodbg1.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #719747;
+    font-size: 13px;
+
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    font-family: 'Damion', cursive;
+    font-family: 'Playfair', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tilt Prism', cursive;
+    color: transparent;
+    font-size: 80px;
+    -webkit-text-stroke: 1px #fff;
+    background: url(back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+
+}
+
+p{
+    font-family: 'Damion', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Playfair', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Tilt Prism', cursive;
+    color: #ffffff;
+    font-size: 15px;
+    line-height:15px;
+}
+button{
+    width: 180px;
+    color: #bace56;
+    font-size: 12px;
+    padding: 12px 0;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid white;
+
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(biryani.jpeg);
+}
+
+.card2{
+    background-image: url(CHA.jpeg);
+}
+.card3{
+    background-image: url(ROSOGOLLA.jpeg);
+}
+.card4{
+    background-image: url(VEG\ THALI.jpeg);
+}
+
+
+
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: #5aca60;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 12px;
+}
